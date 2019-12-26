@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/RPGIsenk/Scenes/MainScene.unity
+    guid: ba5a070b9f1f2f748a7842e3075fb5f4
   m_configObjects: {}
