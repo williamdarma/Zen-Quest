@@ -1,0 +1,292 @@
+fileFormatVersion: 2
+guid: bb44313f833a141b3a7ce925cf08c524
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bone_Creep_01
+    100002: Bone_Creep_02
+    100004: Bone_Creep_03
+    100006: Bone_Creep_04
+    100008: Bone_Creep_05
+    100010: Bone_Creep_06
+    100012: Bone_Creep_07
+    100014: Bone_Creep_08
+    100016: Bone_Creep_09
+    100018: Bone_Creep_11
+    100020: Bone_Creep_12
+    100022: Bone_Creep_13
+    100024: Bone_Creep_14
+    100026: Bone_Creep_15
+    100028: Bone_Creep_16
+    100030: Bone_Creep_17
+    100032: Bone_Creep_18
+    100034: Bone_Creep_19
+    100036: Bone_Creep_20
+    100038: Bone_Creep_21
+    100040: Bone_Creep_22
+    100042: Bone_Creep_24
+    100044: Bone_Creep_25
+    100046: Bone_Creep_26
+    100048: Bone_Creep_27
+    100050: Bone_Creep_28
+    100052: Bone_Creep_29
+    100054: Bone_Creep_30
+    100056: Bone_Creep_31
+    100058: Bone_Creep_32
+    100060: Bone_Creep_33
+    100062: Bone_Creep_34
+    100064: Bone_Creep_35
+    100066: Bone_Creep_36
+    100068: Bone_Creep_Head
+    100070: Bone_Creep_Ribgace
+    100072: Bone_Creep_Root
+    100074: Bone_Creep_Weap
+    100076: Shadow
+    100078: //RootNode
+    400000: Bone_Creep_01
+    400002: Bone_Creep_02
+    400004: Bone_Creep_03
+    400006: Bone_Creep_04
+    400008: Bone_Creep_05
+    400010: Bone_Creep_06
+    400012: Bone_Creep_07
+    400014: Bone_Creep_08
+    400016: Bone_Creep_09
+    400018: Bone_Creep_11
+    400020: Bone_Creep_12
+    400022: Bone_Creep_13
+    400024: Bone_Creep_14
+    400026: Bone_Creep_15
+    400028: Bone_Creep_16
+    400030: Bone_Creep_17
+    400032: Bone_Creep_18
+    400034: Bone_Creep_19
+    400036: Bone_Creep_20
+    400038: Bone_Creep_21
+    400040: Bone_Creep_22
+    400042: Bone_Creep_24
+    400044: Bone_Creep_25
+    400046: Bone_Creep_26
+    400048: Bone_Creep_27
+    400050: Bone_Creep_28
+    400052: Bone_Creep_29
+    400054: Bone_Creep_30
+    400056: Bone_Creep_31
+    400058: Bone_Creep_32
+    400060: Bone_Creep_33
+    400062: Bone_Creep_34
+    400064: Bone_Creep_35
+    400066: Bone_Creep_36
+    400068: Bone_Creep_Head
+    400070: Bone_Creep_Ribgace
+    400072: Bone_Creep_Root
+    400074: Bone_Creep_Weap
+    400076: //RootNode
+    400078: Shadow
+    2100000: Shadow
+    4300000: Shadow
+    7400000: Take 001
+    7400002: Shadow_Intro
+    7400004: Shadow_Idle
+    7400006: Shadow_Attack
+    9500000: //RootNode
+    13700000: Shadow
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 146
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Shadow_Intro
+      takeName: Take 001
+      firstFrame: 20
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Shadow_Idle
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Shadow_Attack
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 146
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

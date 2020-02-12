@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FrostineAnimatorControllerFruitNinja
+  m_Controller: {fileID: 9100000, guid: 6617165c8febd433abbc0aff47db8eac, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: bfdbae5019ac44f2fa6b2b1282ef66e5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 231656caa45014cddae8a212f19d08a2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c8ac9de36698a47b9b55f1bbe3194a02, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d84b7d7ef53d54aca8e4df409b82f024, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 771f05911d25e4ebeae7dea99d631a7a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 25997241643094ab383eaa7e3ca04085, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 55ed71814ac55447e95544413455f9cb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e62f9755c7d8a4d419ba8a3e771bded0, type: 2}
