@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EnchanterAnimatorOverrideControllerFruitNinja
+  m_Controller: {fileID: 9100000, guid: 6617165c8febd433abbc0aff47db8eac, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: bfdbae5019ac44f2fa6b2b1282ef66e5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 89a1e86b6bebb8e40afa7ba9f4e86d7d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c8ac9de36698a47b9b55f1bbe3194a02, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a5dd288bc7f9d4d19a0e381f1b883f94, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 771f05911d25e4ebeae7dea99d631a7a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2b36915c4f557b345906e3619abc3daf, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 55ed71814ac55447e95544413455f9cb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8498898e7ab7e9842b99eeffcfc4247c, type: 2}
