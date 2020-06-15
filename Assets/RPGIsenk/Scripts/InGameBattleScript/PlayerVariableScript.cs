@@ -30,12 +30,14 @@ public class PlayerVariableScript : MonoBehaviour
     public Animator CharacterAnimator;
     public PlayerTurnManager ptm;
     public bool isPlayable;
+    public BattleGameManager BGM;
 
     // Start is called before the first frame update
     void Start()
     {
         CharacterCurrentHP = CharacterHP;
         isPlayable = true;
+        BGM = GameObject.Find("BattleGameManager").GetComponent<BattleGameManager>();
     }
 
     // Update is called once per frame
@@ -46,10 +48,25 @@ public class PlayerVariableScript : MonoBehaviour
 
     public void CharacterGetHit(float dmg)
     {
-        float dmgTaken = dmg * (100 / (100 + CharacterDeffend));   
+        StartCoroutine(IeCharacterGetHit(dmg));
+
+    }
+    IEnumerator IeCharacterGetHit(float dmg)
+    {
+        float dmgTaken = dmg * (100 / (100 + CharacterDeffend));
         CharacterCurrentHP -= dmgTaken;
         CharacterAnimator.SetTrigger("GetHit");
         ptm.PlayerHPSlider.value = CharacterCurrentHP;
-
+        yield return new WaitForSeconds(.2f);
+        if (CharacterCurrentHP <= 0)
+        {
+            isPlayable = false;
+            BGM.TotalPlayerDefeated += 1;
+            BGM.SummonedCharacter.Remove(gameObject);
+            ptm.gameObject.SetActive(false);
+            gameObject.SetActive(false);
+            BGM.CheckingLoseOrWin();
+            BGM.deselectCharacter();
+        }
     }
 }

@@ -44,7 +44,7 @@ public class EnemyVariableScript : MonoBehaviour
         print(dmgTaken);
         EnemyAnimator.SetTrigger("GetHit");
         etm.EnemyHPSlider.value = EnemyCurrentHP;
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.1f);
         if (EnemyCurrentHP <= 0)
         {
             isPlayable = false;
@@ -52,8 +52,8 @@ public class EnemyVariableScript : MonoBehaviour
             BGM.SummonedEnemy.Remove(gameObject);
             etm.gameObject.SetActive(false);
             gameObject.SetActive(false);
-            BGM.SummonedEnemy.Remove(gameObject);
             BGM.CheckingLoseOrWin();
+            BGM.deselectEnemy();
         }
     }
 
@@ -74,7 +74,8 @@ public class EnemyVariableScript : MonoBehaviour
         BGM.TargetPlayer = BGM.SummonedCharacter[intTarget];
         yield return new WaitForSeconds(.1f);
         EnemyAnimator.SetTrigger("EnemyAttack");
-        yield return new WaitForSeconds(1.2f);
+        //yield return new WaitForSeconds(EnemyAnimator.GetCurrentAnimatorStateInfo(0).length + EnemyAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+        yield return new WaitForSeconds(1f);
         BGM.TargetPlayer.GetComponent<PlayerVariableScript>().CharacterGetHit(EnemyAttack);
         etm.enemyTurn = false;
         BattleGameManager.instanceBattleGameManager.enemyisAttacking = false;
