@@ -45,6 +45,7 @@ public class BattleGameManager : MonoBehaviour
     public GameObject[] Bebas;
     public GameObject apakek;
     public List<GameObject> listbebas = new List<GameObject>();
+    public Text TextBebas;
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +66,11 @@ public class BattleGameManager : MonoBehaviour
         UltimateAttackSlider.maxValue = 100;
         UltimateAttackSlider.value = 0;
         multiplierUlti = 4 - SummonedCharacter.Count;
+        CanUseUlti(false);
+    }
+    void Update()
+    {
+        TextBebas.text = "Player Atacking = " + playerisAttacking + " Enemy Attacking = " + enemyisAttacking;
     }
     IEnumerator IeStartGame()//Start the InGameBattle
     {
@@ -73,6 +79,13 @@ public class BattleGameManager : MonoBehaviour
         yield return new WaitForSeconds(.2f);
         ChangeCharacterAvatarr();
         ChangeEnemyAvatar();
+    }
+    public void CanUseUlti(bool ulti)
+    {
+        for (int i = 0; i < ArrayUICharacter.Length; i++)
+        {
+            ArrayUICharacter[i].transform.GetChild(7).GetChild(3).GetComponent<Button>().enabled = ulti;
+        }
     }
     public void CheckingLoseOrWin()
     {
@@ -180,6 +193,7 @@ public class BattleGameManager : MonoBehaviour
     {
         if (UltimateAttackSlider.value == UltimateAttackSlider.maxValue)
         {
+            CanUseUlti(true);
             return;
         }
         UltimateAttackSlider.value += ultiGauge * multiplierUlti;
@@ -193,47 +207,51 @@ public class BattleGameManager : MonoBehaviour
         {
             yield return null;
         }
+        Animator PlayerAnimTemp = SelectedCharacter.GetComponent<PlayerVariableScript>().CharacterAnimator;
         if (atktype == 0)
         {
-            SelectedCharacter.GetComponent<PlayerVariableScript>().CharacterAnimator.SetTrigger("Attack1");
-           ChangeUltimateGaugeValue(6f);
+            PlayerAnimTemp.SetTrigger("Attack1");
+            ChangeUltimateGaugeValue(6f);
         }
         else if (atktype == 1)
         {
-            SelectedCharacter.GetComponent<PlayerVariableScript>().CharacterAnimator.SetTrigger("Attack2");
-              ChangeUltimateGaugeValue(4f);
+            PlayerAnimTemp.SetTrigger("Attack2");
+            ChangeUltimateGaugeValue(4f);
         }
         else if (atktype == 2)
         {
-            SelectedCharacter.GetComponent<PlayerVariableScript>().CharacterAnimator.SetTrigger("Attack3");
-               ChangeUltimateGaugeValue(2f);
+            PlayerAnimTemp.SetTrigger("Attack3");
+            ChangeUltimateGaugeValue(2f);
         }
         else
         {
-            SelectedCharacter.GetComponent<PlayerVariableScript>().CharacterAnimator.SetTrigger("SpecialAttack");
-             ChangeUltimateGaugeValue(0f);
+            PlayerAnimTemp.SetTrigger("SpecialAttack");
+            ChangeUltimateGaugeValue(0f);
+            CanUseUlti(false);
         }
-
         print("player Attacing");
         if (TargetedEnemy == null)
         {
             TargetedEnemy = SummonedEnemy[0];
         }
+        playerisAttacking = true;
         // yield return new WaitForSeconds(.1f);
+        // yield return new WaitForSeconds(PlayerAnimTemp.GetNextAnimatorStateInfo(0).length + PlayerAnimTemp.GetNextAnimatorStateInfo(0).normalizedTime);
         yield return new WaitForSeconds(1.2f);
         TargetedEnemy.GetComponent<EnemyVariableScript>().EnemyGetHit(SelectedCharacter.GetComponent<PlayerVariableScript>().CharacterAttack);
         TargetedEnemy = null;
         SelectedCharacter = null;
         SelectedUICharacter.GetComponent<PlayerTurnManager>().ResetTurnSlider();
+        playerisAttacking = false;
     }
-    void deselectCharacter()
+    public void deselectCharacter()
     {
         for (int i = 0; i < ArrayPlayerGameObjectPlace.Length; i++)
         {
             ArrayPlayerGameObjectPlace[i].transform.GetChild(0).gameObject.SetActive(false);
         }
     }
-    void deselectEnemy()
+    public void deselectEnemy()
     {
         for (int i = 0; i < ArrayEnemyGameObjectPlace.Length; i++)
         {
