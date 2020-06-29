@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/RPGIsenk/Scenes/MainScene.unity
     guid: ba5a070b9f1f2f748a7842e3075fb5f4
+  - enabled: 1
+    path: Assets/Udemy/Terminal Hacker/TerminalHackerScene.unity
+    guid: 4e1b8cb4968d4a843a52819afa5b6fba
   m_configObjects: {}
